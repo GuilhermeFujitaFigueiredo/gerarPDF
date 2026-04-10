@@ -7,46 +7,61 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>BRASILEIRÃO COMÉRCIOS</h1>
 
-  <div class="campo"><input placeholder="Digite o nome da empresa" id="c1"></div>
-    <br>
-  <div class="campo"><input placeholder="Digite a data de emissão" id="c2"></div>
-    <br>
-  <div class="campo"><input placeholder="Digite o item comprado" id="c3"></div>
-    <br>
-  <div class="campo"><input placeholder="digite a quantidade" id="c4"></div>
-    <br>
-  <div class="campo"><input placeholder="Digite o valor unitário" id="c5"></div>
-    <br>
-  <div class="campo"><input placeholder="Digite o valor total" readonly id="c6"></div>
-    <br>
-  <div class="campo"><input placeholder="Assinatura" id="c7"></div>
-    <br>
-  <div class="campo"><input placeholder="Observações" id="c8"></div>
-    <br>
+  <header>
+    <nav>
+      <div class="divImgHeader">
+        <img src="Brasileirao_2011_Logo.png" alt="" class="imgHeader">
+      </div>
 
-  <div class="">
-    <button onclick="gerar()">Gerar Relatório</button>
-    <button onclick="gerar(true)">Gerar PDF</button>
-    <button onclick="gerar(false, true)">Imprimir</button>
-  </div>  
+      <div class="divHeader">
+        <h3>BRASILEIRÃO COMÉRCIOS</h3>
+        <h4>Emissão de nota de compra</h4>
+      </div>
+    </nav>
+  </header>
 
-  <div id="relatorio">
-    <h1>BRASILEIRÃO COMÉRCIOS</h1>
-    <img src="Brasileirao_2011_Logo.png">
-    <h2>Relatório da Compra</h2>
-    <p><strong>Nome da Empresa:</strong> <span id="r1"></span></p>
-    <p><strong>Data de emissão:</strong> <span id="r2"></span></p>
-    <p><strong>Item comprado:</strong> <span id="r3"></span></p>
-    <p><strong>Quantidade:</strong> <span id="r4"></span></p>
-    <p><strong>Valor unitário:</strong> <span id="r5"></span></p>
-    <p><strong>Valor total:</strong> <span id="r6"></span></p>
-    <p><strong>Assinatura:</strong> <span id="r7"></span></p>
-    <p><strong>Observações:</strong> <span id="r8"></span></p>
+    <br><br><br>
 
-  </div>
+  <main>
+    <div class="campo"><input placeholder="Digite o nome da empresa" id="c1"></div>
+      <br>
+    <div class="campo"><input placeholder="Digite a data de emissão" id="c2"></div>
+      <br>
+    <div class="campo"><input placeholder="Digite o item comprado" id="c3"></div>
+      <br>
+    <div class="campo"><input placeholder="digite a quantidade" id="c4"></div>
+      <br>
+    <div class="campo"><input placeholder="Digite o valor unitário" id="c5"></div>
+      <br>
+    <div class="campo"><input placeholder="Digite o valor total" readonly id="c6"></div>
+      <br>
+    <div class="campo"><input placeholder="Assinatura" id="c7"></div>
+      <br>
+    <div class="campo"><input placeholder="Observações" id="c8"></div>
+      <br>
 
+    <div class="">
+      <button onclick="gerar()">Gerar Relatório</button>
+      <button onclick="gerar(true)">Gerar PDF</button>
+      <button onclick="gerar(false, true)">Imprimir</button>
+    </div>  
+
+    <div id="relatorio">
+      <h1>BRASILEIRÃO COMÉRCIOS</h1>
+      <img src="Brasileirao_2011_Logo.png">
+      <h2>Relatório da Compra</h2>
+      <p><strong>Nome da Empresa:</strong> <span id="r1"></span></p>
+      <p><strong>Data de emissão:</strong> <span id="r2"></span></p>
+      <p><strong>Item comprado:</strong> <span id="r3"></span></p>
+      <p><strong>Quantidade:</strong> <span id="r4"></span></p>
+      <p><strong>Valor unitário:</strong> <span id="r5"></span></p>
+      <p><strong>Valor total:</strong> <span id="r6"></span></p>
+      <p><strong>Assinatura:</strong> <span id="r7"></span></p>
+      <p><strong>Observações:</strong> <span id="r8"></span></p>
+
+    </div>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
